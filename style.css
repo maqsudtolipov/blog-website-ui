@@ -185,6 +185,39 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3.6rem 0;
+}
+
+/* comment */
+.comment {
+  display: flex;
+  gap: 1.6rem;
+  padding: 2.4rem 0 0 0;
+}
+
+.comment input {
+  width: 100%;
+  border: none;
+  background-color: #f6f7fc;
+  border-bottom: 1px solid #228be6;
+  font-size: 1.6rem;
+  color: #4b5563;
+  padding: 0.8rem 1.6rem;
+}
+
+.comment input:focus {
+  outline-color: #228be6;
+}
+
+.comment button {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #228be6;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
 }
 
 /* media queries for 950 and below */
@@ -266,4 +299,17 @@ p {
     align-self: stretch;
     width: 100%;
   }
+}
+
+/* alert message */
+.alert {
+  margin: 2.4rem 0;
+  padding: 1.6rem 3.2rem;
+  color: #c92a2a;
+  background-color: #ffc9c9;
+  border-radius: 0.6rem;
+}
+
+.alert p {
+  font-size: 1.4rem;
 }
