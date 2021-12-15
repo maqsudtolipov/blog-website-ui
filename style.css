@@ -186,3 +186,49 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
+/* media queries for 950 and below */
+@media screen and (max-width: 950px) {
+  .user-card,
+  .user-img,
+  .user-page-info,
+  .user-page-info img,
+  .user-page-post,
+  .post-card {
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem 0.2rem #bbbfca2d;
+  }
+
+  /* decrease fonts */
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .user-name {
+    font-size: 2.4rem;
+  }
+
+  .user-description p {
+    font-size: 1.6rem;
+  }
+
+  .post-card p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .post-card__comments {
+    font-size: 1.4rem;
+    gap: 0.4rem;
+  }
+
+  /* change UI */
+  .user-page {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
